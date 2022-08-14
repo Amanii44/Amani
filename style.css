@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+body{
+    min-height      : 100vh;
+    width           : 100%;
+}
+.continer{
+    background: rgb(206, 212, 212);
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;  
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+    border-radius:100%;
+    box-shadow: 5px 5px 5px   #aaaaaa;
+}
+
+.logo :hover {
+    background-color: rgb(91, 128, 138);
+    }
+ul li{
+    display: inline-block;
+}
+ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+ul li a:hover {
+    background-color: rgb(91, 128, 138);
+    }
+.content{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 70%;
+    margin: auto;
+    padding-top: 90px;
+  /*   background: rgb(0, 204, 255); */
+   
+   
+}
+
+
+.content .text{
+    width: 50%;
+    color: rgb(7, 7, 7);
+    position: relative;
+ /*    background: rgb(0, 255, 42);*/
+}
+
+.content .text h2{
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+p.thick {
+    font-weight: bold;
+    font-family: cursive;
+  }
+.content .text p{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: justify;
+}
+.content .text a{
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20%; 
+    left: 40%;
+    transform: translateX(-40%);
+    position: absolute;
+}
+.content .image{
+    width: 340px;
+/*    background: rgb(255, 0, 119);*/
+}
+.content .image img{
+    width: 100%;
+    border-radius:100%;
+}
+.icons{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+.icons img{
+    width: 150px;
+}
+.icons img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*
+.menu {
+    display: flex;
+}
+
+#menuCheck,
+label[for="menuCheck"] {
+    display: none;
+}
+
+.menu-list {
+    list-style: none;
+    display   : flex;
+}
+
+.menu-list li {
+    display     : inline-block;
+    margin-right: 32px;
+    font-size   : 1.1em;
+    cursor      : pointer;
+    transition  : color 0.3s;
+}
+
+.menu-list li:hover {
+    color: #fff;
+}
+*/
+/* عشان شاشة الجوال يضبط فيها عرض الموقع*/
+@media (max-width:950px){
+    .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content .image, .content .text{
+        width: 80%;
+    }
+/*
+    .menu-list {
+        position        : absolute;
+        background-color: #20252b;
+        top             : 100%;
+        left            : 0;
+        width           : 100%;
+        flex-direction  : column;
+        align-items     : flex-end;
+        max-height      : 0;
+        transition      : max-height 0.5s;
+    }
+
+    .menu-list li {
+        margin-bottom: 30px;
+    }
+
+    .menu-list li:first-child {
+        margin-top: 16px;
+    }
+
+    #menuCheck,
+    label[for="menuCheck"] {
+        display: block;
+    }
+
+    #menuCheck {
+        width : 0;
+        height: 0;
+    }
+
+    #menuCheck:checked~.menu-list {
+        max-height: 250px;
+    }
+
+    label[for="menuCheck"] {
+        width      : 32px;
+        height     : 32px;
+        cursor     : pointer;
+        position   : relative;
+        display    : flex;
+        align-items: center;
+    }
+
+    .h-line {
+        height          : 2px;
+        background-color: #e0e0e0;
+        width           : 100%;
+    }
+
+    label[for="menuCheck"]::before,
+    label[for="menuCheck"]::after {
+        content         : "";
+        position        : absolute;
+        width           : 100%;
+        height          : 2px;
+        background-color: #e0e0e0;
+        top             : 20%;
+        transition      : transform 0.s, top 0.3s;
+    }
+
+    label[for="menuCheck"]::after {
+        top: 75%;
+    }
+
+    #menuCheck:checked~label span {
+        height: 0;
+    }
+
+    #menuCheck:checked~label::before {
+        top      : 50%;
+        transform: rotate(-45deg);
+    }
+
+    #menuCheck:checked~label::after {
+        top      : 50%;
+        transform: rotate(45deg);
+    }
+*/
+}
+/*  هنا كود الموقع */
+
+
+
